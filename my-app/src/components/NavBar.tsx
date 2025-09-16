@@ -1,14 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import React from 'react';
+
+// import {button} from "react-dom";
+
 import './NavBar.css'
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playball&display=swap" rel="stylesheet"></link>
 
-
+// import {Link} from 'react-router-dom';
 function NavBar() {
 
   return (
     <>
-
   <div className="container">
     <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 mb-3 border-bottom">
       <a href="/" className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
@@ -22,10 +25,12 @@ function NavBar() {
         <li><a href="#" className="nav-link px-2 link-dark">Nosotros</a></li>
         <li><a href="#" className="nav-link px-2 link-dark">Contacto</a></li>
       </ul>
-
+{/* color:'#D90D58' */}
       <div className="col-md-3 text-end">
-        <button type="button" className="btn btn-outline-primary me-2">Login</button>
-        <button type="button" className="btn btn-primary">Sign-up</button>
+        <button type="button" className="btn btn-outline-primary me-2 " ><i className="bi bi-person-circle me-3"></i>Mi cuenta</button>
+        <button type="button" className="btn btn-primary me-2"><i className="bi bi-archive-fill me-3"></i>Pedidos</button>
+        <button type="button" className="btn btn-primary me-2"><i className="bi bi-cart-plus-fill"></i></button>
+
       </div>
     </header>
   </div>

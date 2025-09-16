@@ -3,8 +3,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import Heroes from "./components/heroes";
+import Heroes from "./components/Heroes";
 import HeroesForm from "./components/Heroes-form";
+import Gallery from "./components/Gallery"
+import Reviews from "./components/Reviews";
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"/>
@@ -20,7 +22,7 @@ function App() {
 
     <NavBar></NavBar>
 
-
+{/* ==============CAROUSEL======================= */}
 
   <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
     <div className="carousel-indicators">
@@ -30,35 +32,35 @@ function App() {
     </div>
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
+        {/* <svg className="bd-placeholder-img" width="100%" height="100%" href="./img/portadav3.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> */}
+        <img className="bd-placeholder-img" src="./img/portada.jpg" aria-hidden="true"/>
         <div className="container">
           <div className="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a className="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <h1>Pídelo de inmediato</h1>
+            <p>Delivery express: endulza tu dia sin esperas</p>
+            <p><a className="btn btn-lg btn-primary" href="#">Ver productos</a></p>
           </div>
         </div>
       </div>
       <div className="carousel-item">
-        <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
+        <img className="bd-placeholder-img" src="./img/portada2.jpg" aria-hidden="true"/>
+        
         <div className="container">
           <div className="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a className="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <h1>20 años de Historia</h1>
+            <p>Sabores de siempre, para celebrar hoy.</p>
+            <p><a className="btn btn-lg btn-primary" href="#">Ver mas</a></p>
           </div>
         </div>
       </div>
       <div className="carousel-item">
-        <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img className="bd-placeholder-img" src="./img/portada3.jpg" aria-hidden="true"/>
 
         <div className="container">
           <div className="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a className="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <h1>Es hora de ese dulce</h1>
+            <p>Pídelo y disfruta ¡Te lo mereces!</p>
+            <p><a className="btn btn-lg btn-primary" href="#">Ver mas</a></p>
           </div>
         </div>
       </div>
@@ -72,31 +74,23 @@ function App() {
       <span className="visually-hidden">Next</span>
     </button>
   </div>
-
-
+{/* ==============CAROUSEL======================= */}
 
   <div className="container marketing">
-    <div className="row">
+    <div className="row ">
       <div className="col-lg-4">
-        <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <li className="bi bi-fork-knife"  style={{ listStyle: "none", color:'#D90D58', fontSize: '50px'  }}></li>
+        {/* <h2 className="fs-4"style={{ listStyle: "none", color:'#a5a4a5ff' }}>Sabor auténtico</h2> */}
+        <p className="lead">Sabor auténtico</p>
 
-        <h2>Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div>
       <div className="col-lg-4">
-        <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <i className="bi bi-fire"  style={{ listStyle: "none", color:'#D90D58', fontSize: '50px'  }}></i>
+        <p className="lead">Creatividad en cada detalle</p>
       </div>
       <div className="col-lg-4">
-        <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <i className="bi bi-balloon-heart-fill"  style={{ listStyle: "none", color:'#D90D58', fontSize: '50px'  }}></i>
+        <p className="lead">Cercanía con el cliente</p>
       </div>
     </div>
 
@@ -106,20 +100,20 @@ function App() {
 
 {/* Cards*/}
   <div className="container px-4 py-5" id="custom-cards">
-    <h2 className="pb-2 border-bottom">Custom cards</h2>
+    <h2 className="pb-2 border-bottom">Categorias</h2>
 
     <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div className="col">
-        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{ backgroundImage: "url('./img/features/unsplash-photo-1.jpg')" }}>
+        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{ backgroundImage: "url('./img/categoria/1.png')" }}>
           <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tortas</h2>
             <ul className="d-flex list-unstyled mt-auto">
               <li className="me-auto">
                 <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white"/>
               </li>
               <li className="d-flex align-items-center me-3">
                 <i className="bi-geo-fill me-3" style={{ width:"1", height:"1.4em" }}></i>
-                <small>Earth</small>
+                <small>Tortas</small>
               </li>
               <li className="d-flex align-items-center">
                 <i className="bi-calendar3 me-3" style={{ width:"1", height:"1.4em" }}></i>
@@ -131,9 +125,9 @@ function App() {
       </div>
 
       <div className="col">
-        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{ backgroundImage: "url('./img/features/unsplash-photo-2.jpg')" }}>
+        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{ backgroundImage: "url('./img/categoria/2.png')" }}>
           <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
+            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Postres</h2>
             <ul className="d-flex list-unstyled mt-auto">
               <li className="me-auto">
                 <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white"/>
@@ -141,7 +135,7 @@ function App() {
               <li className="d-flex align-items-center me-3">
                 <i className="bi-geo-fill me-3" style={{ width:"1", height:"1.4em" }}></i>
 
-                <small>Pakistan</small>
+                <small>Postres</small>
               </li>
               <li className="d-flex align-items-center">
                 <i className="bi-calendar3 me-3" style={{ width:"1", height:"1.4em" }}></i>
@@ -154,17 +148,18 @@ function App() {
       </div>
 
       <div className="col">
-        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{ backgroundImage: "url('./img/features/unsplash-photo-3.jpg')" }}>
+        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{ backgroundImage: "url('./img/categoria/3.png')" }}>
           <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
+            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Panadería</h2>
             <ul className="d-flex list-unstyled mt-auto">
               <li className="me-auto">
                 <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white"/>
+              {/* <i className="bi bi-basket-fill rounded-circle border border-white"style={{width:'32', height:'32'}}></i> */}
               </li>
               <li className="d-flex align-items-center me-3">
                 <i className="bi-geo-fill me-3" style={{ width:"1", height:"1.4em" }}></i>
 
-                <small>California</small>
+                <small>Panaderia</small>
               </li>
               <li className="d-flex align-items-center">
                 <i className="bi-calendar3 me-3" style={{ width:"1", height:"1.4em" }}></i>
@@ -180,19 +175,22 @@ function App() {
 
 
 
-    <hr className="featurette-divider"/>
-
     <div className="row featurette">
       <div className="col-md-7">
-        <h2 className="featurette-heading">First featurette heading. <span className="text-muted">It’ll blow your mind.</span></h2>
-        <p className="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 className="featurette-heading">30 Años de excelencia </h2>
+        <h3 className="text-muted">Sweet Treats</h3>
+        <p className="lead">Nacimos con el sueño de compartir momentos dulces y especiales. Desde el primer día, nuestra pasión ha sido crear postres que combinan tradición, creatividad y un toque casero que se siente en cada bocado. Lo que comenzó como una pequeña ilusión, hoy es un espacio donde cada cliente puede disfrutar sabores únicos y sentirse como en casa.</p>
       </div>
       <div className="col-md-5">
-        <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img src="./img/about-person.png" className="d-block mx-lg-auto img-fluid bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Bootstrap Themes" width="500" height="500" loading="lazy"/>
       </div>
     </div>
+  </div>
 
+<Gallery></Gallery>
+<Heroes></Heroes> 
+
+  {/* <div className="container marketing">
     <hr className="featurette-divider"/>
 
     <div className="row featurette">
@@ -205,176 +203,86 @@ function App() {
 
       </div>
     </div>
-
-    <hr className="featurette-divider"/>
-
-    <div className="row featurette">
-      <div className="col-md-7">
-        <h2 className="featurette-heading">And lastly, this one. <span className="text-muted">Checkmate.</span></h2>
-        <p className="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div className="col-md-5">
-        <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-  </div>
+  </div> */}
 
 
-
-{/* Cards*/}
-  <div className="container px-4 py-5" id="custom-cards">
-    <h2 className="pb-2 border-bottom">Custom cards</h2>
-
-    <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div className="col">
-        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{ backgroundImage: "url('./img/features/unsplash-photo-1.jpg')" }}>
-          <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
-            <ul className="d-flex list-unstyled mt-auto">
-              <li className="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white"/>
-              </li>
-              <li className="d-flex align-items-center me-3">
-                <i className="bi-geo-fill me-3" style={{ width:"1", height:"1.4em" }}></i>
-                <small>Earth</small>
-              </li>
-              <li className="d-flex align-items-center">
-                <i className="bi-calendar3 me-3" style={{ width:"1", height:"1.4em" }}></i>
-                <small>3d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="col">
-        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{ backgroundImage: "url('./img/features/unsplash-photo-2.jpg')" }}>
-          <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
-            <ul className="d-flex list-unstyled mt-auto">
-              <li className="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white"/>
-              </li>
-              <li className="d-flex align-items-center me-3">
-                <i className="bi-geo-fill me-3" style={{ width:"1", height:"1.4em" }}></i>
-
-                <small>Pakistan</small>
-              </li>
-              <li className="d-flex align-items-center">
-                <i className="bi-calendar3 me-3" style={{ width:"1", height:"1.4em" }}></i>
-
-                <small>4d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="col">
-        <div className="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style={{ backgroundImage: "url('./img/features/unsplash-photo-3.jpg')" }}>
-          <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h2 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h2>
-            <ul className="d-flex list-unstyled mt-auto">
-              <li className="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" className="rounded-circle border border-white"/>
-              </li>
-              <li className="d-flex align-items-center me-3">
-                <i className="bi-geo-fill me-3" style={{ width:"1", height:"1.4em" }}></i>
-
-                <small>California</small>
-              </li>
-              <li className="d-flex align-items-center">
-                <i className="bi-calendar3 me-3" style={{ width:"1", height:"1.4em" }}></i>
-                <small>5d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
- {/* Cards*/}
-
-
-
-
-<Heroes></Heroes> 
-<HeroesForm></HeroesForm>
 
 
   <div className="b-example-divider"></div>
 
   <div className="container px-4 py-5" id="icon-grid">
-    <h2 className="pb-2 border-bottom">Icon grid</h2>
+    <h2 className="pb-2 border-bottom">Beneficios de la pastelería</h2>
 
     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
       <div className="col d-flex align-items-start">
-        <i className="bi bi-bootstrap text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
+        <i className="bi bi-cookie text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
 
         <div>
-          <h4 className="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h4 className="fw-bold mb-0">Ingredientes frescos</h4>
+          <p>Usamos productos de la mejor calidad en cada preparación.</p>
         </div>
       </div>
       <div className="col d-flex align-items-start">
-        <i className="bi bi-cpu-fill text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
+        <i className="bi bi-truck text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
 
         <div>
-          <h4 className="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h4 className="fw-bold mb-0">Pedidos personalizados</h4>
+          <p>Diseñamos tortas y postres únicos para tu ocasión especial.</p>
         </div>
       </div>
       <div className="col d-flex align-items-start">
-        <i className="bi bi-calendar3 text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
+        <i className="bi bi-house text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
 
         <div>
-          <h4 className="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h4 className="fw-bold mb-0">Entrega a domicilio</h4>
+          <p>Llevamos la dulzura de Sweet Treats directo a tu puerta.</p>
         </div>
       </div>
       <div className="col d-flex align-items-start">
-        <i className="bi bi-calendar3 text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
+        <i className="bi bi-flower1 text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
 
         <div>
-          <h4 className="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h4 className="fw-bold mb-0">Opciones saludables</h4>
+          <p>Contamos con alternativas sin azúcar, sin gluten y veganas.</p>
         </div>
       </div>
       <div className="col d-flex align-items-start">
-        <i className="bi bi-speedometer2 text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
+        <i className="bi bi-star-fill text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
 
         <div>
-          <h4 className="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h4 className="fw-bold mb-0">Atención cercana</h4>
+          <p>Te acompañamos en cada detalle de tu pedido.</p>
         </div>
       </div>
       <div className="col d-flex align-items-start">
-        <i className="bi bi-toggles2 text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
+        <i className="bi bi-backpack3 text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
 
         <div>
-          <h4 className="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h4 className="fw-bold mb-0">Variedad de sabores</h4>
+          <p>Desde lo clásico hasta lo innovador, tenemos algo para cada gusto.</p>
         </div>
       </div>
       <div className="col d-flex align-items-start">
-        <i className="bi bi-geo-fill text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
+        <i className="bi bi-cake2-fill text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
 
         <div>
-          <h4 className="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h4 className="fw-bold mb-0">Decoración creativa</h4>
+          <p>Diseños únicos y personalizados que hacen de cada postre una obra de arte.</p>
         </div>
       </div>
       <div className="col d-flex align-items-start">
-        <i className="bi bi-house-fill text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
+        <i className="bi bi-emoji-sunglasses-fill text-muted flex-shrink-0 me-3" style={{ width:"1.75em", height:"1.75em" }}></i>
         <div>
-          <h4 className="fw-bold mb-0">Featured title</h4>
-          <p>Paragraph of text beneath the heading to explain the heading.</p>
+          <h4 className="fw-bold mb-0">Experiencia garantizada</h4>
+          <p>Más de 20 años endulzando momentos especiales con clientes felices.</p>
         </div>
       </div>
     </div>
   </div>
+  
+    <HeroesForm></HeroesForm>
 
+    <Reviews></Reviews>
 
     <Footer></Footer>
 

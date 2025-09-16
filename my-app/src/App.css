@@ -70,17 +70,17 @@
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
+/* .carousel {
+  margin-bottom: 1rem;
+} */
 /* Since positioning the image, we need to help out the caption */
-.carousel-caption {
+/* .carousel-caption {
   bottom: 3rem;
   z-index: 10;
-}
+} */
 
 /* Declare heights because of positioning of img element */
-.carousel-item {
+/* .carousel-item {
   height: 32rem;
 }
 .carousel-item > img {
@@ -89,7 +89,7 @@
   left: 0;
   min-width: 100%;
   height: 32rem;
-}
+} */
 
 
 /* MARKETING CONTENT
@@ -158,7 +158,7 @@
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -168,14 +168,20 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 70vh;
 }
 .carousel-item > img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100%;
-  height: 32rem;
+
+    width: 100%;
+    height: 300px;
+    backgroundSize: cover;       
+    backgroundPosition: center;    
+    backgroundRepeat: no-repeat;  
+    height: 100vh;
+
+}
+.bd-placeholder-img{
+  background-size: cover;
 }
 
 
