@@ -7,6 +7,9 @@ import Heroes from "./components/Heroes";
 import HeroesForm from "./components/Heroes-form";
 import Gallery from "./components/Gallery"
 import Reviews from "./components/Reviews";
+import Login from "./components/login/Login";
+// import Catalogo from "./components/catalogo/catalogo";
+// import producto from "./components/catalogo/producto";
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"/>
@@ -21,7 +24,9 @@ function App() {
     <>
 
     <NavBar></NavBar>
-
+    {/* <Catalogo></Catalogo> */}
+    <Login></Login>
+    {/* <Producto></Producto> */}
 {/* ==============CAROUSEL======================= */}
 
   <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
