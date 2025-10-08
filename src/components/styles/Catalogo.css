@@ -1,0 +1,38 @@
+
+ 
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+/* backgroundImage: "url('./img/categoria/2.png')"  */
+.portada{
+ 
+  width: 100%;
+  height: 80vh; /* Ocupa toda la altura de la pantalla */
+  background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('./img/portada2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+/* .portada-texto{
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+} */

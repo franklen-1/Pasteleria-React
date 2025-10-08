@@ -1,0 +1,19 @@
+.btn-add{
+    color:#fff;
+    background-color: #D90D58;
+    border-radius: 20px;
+    border:solid 1px#D90D58;
+    width: 130px;        /* ancho del botón */
+       /* alto del botón */
+    color: white;
+
+}
+.btn-add:hover{
+     color:#D90D58;
+    background-color: #fdebf2;
+     border-radius: 15px;
+     border:solid 1px#D90D58;
+}
+.text-price {
+    color:#D90D58;
+}
