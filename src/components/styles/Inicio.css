@@ -1,0 +1,12 @@
+.icon-b{
+    color: #D90D58;
+}
+.card-cover{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.card-cover:hover{
+    background-color: #f8d7da; /* color suave tipo pastel */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}

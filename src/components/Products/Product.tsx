@@ -1,18 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import type { CartType } from '../../types';
+import type { CartItem, CartType } from '../../types';
 import "./Product.css";
 
 type ProductProps ={
   item: CartType;
   addToCart: (item: CartType) => void;
+  cart: CartItem[];
 };
 
 
 const Product = ({item, addToCart}:ProductProps) =>{
   return (
     <>
-<div className="p-2">
+<div className="p-2 product">
   <div className="card border-0 shadow-lg rounded-4 overflow-hidden product-card">
     <img
       src={`/img/products/${item.image}.jpg`}

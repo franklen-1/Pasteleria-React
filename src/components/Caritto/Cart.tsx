@@ -33,8 +33,15 @@ const Cart = ({
     <>
       {/* modal */}
 
-      <div className="container text-center mt-5">
-          <button
+      <div className="container text-center mt-5   position-fixed"
+      style={{
+        bottom: "20px",
+        right: "20px",
+        width: "60px",
+        height: "60px",
+        zIndex: 1000,
+      }}>
+          <button 
             type="button"
             className="btn  btn-light position-relative rounded-circle d-flex align-items-center justify-content-center"
             data-bs-toggle="modal"
@@ -195,9 +202,13 @@ const Cart = ({
               >
                 limpiar carrito
               </button>
-              <button type="button" className="btn btn-primary">
+
+              <a href="/checkout">
+               <button type="button" className="btn btn-primary">
                 Comprar{" "}
               </button>
+              </a>
+             
             </div>
           </div>
         </div>

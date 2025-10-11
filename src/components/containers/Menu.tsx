@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './Menu.css';
+import CartButton from '../Caritto/CartButton';
 
 // import Cart from '../Caritto/Cart';
 // import type { CartItem } from '../../types';
@@ -28,7 +29,7 @@ return (
                 <Link className="nav-link fw-semibold text-dark menu-link" to="/">Inicio</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link fw-semibold text-dark menu-link" to="/catalogo">Catálogo</Link>
+                <Link className="nav-link fw-semibold text-dark menu-link" to="/catalogo">Productos</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link fw-semibold text-dark menu-link" to="/nosotros">Nosotros</Link>
@@ -41,11 +42,16 @@ return (
         </nav>
 
 {/* color:'#D90D58' */}
-    <div>
-     
-    </div>
+
+      <button className="btn btn-add " type="button"      >
+          <i className="bi bi-person me-2"></i>
+          Mi cuenta
+      </button>
+      
     </header>
+
   </div>
+  
 
    </>
   );

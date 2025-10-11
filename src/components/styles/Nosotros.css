@@ -1,0 +1,18 @@
+.btn{
+    color:#fff;
+    background-color: #D90D58;
+    border-radius: 25px;
+    border:solid 1px#D90D58;
+    color: white;
+
+}
+.btn:hover{
+     color:#D90D58;
+    background-color: #fdebf2;
+     border-radius: 25px;
+     border:solid 1px#D90D58;
+}
+
+.card-1{
+    background-color: #D90D58;
+}
