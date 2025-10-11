@@ -2,11 +2,7 @@ import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './Menu.css';
-import CartButton from '../Caritto/CartButton';
 
-// import Cart from '../Caritto/Cart';
-// import type { CartItem } from '../../types';
-// import { useState } from 'react';
 
 
 export const Menu = () => {
